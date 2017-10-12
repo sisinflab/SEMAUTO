@@ -3,6 +3,8 @@ A Java framework to build semantics-aware autoencoder neural network from a know
 
 ## Quickstart
 
+### Configuration
+
 Edit props.txt and write the desired chains of properties to fetch from the graph.
 
 Edit config.properties to setup the neural network configuration.
@@ -12,11 +14,16 @@ SEMAUTO generates those files with the following settings in config file:
 - computeWeights=false
 - computeRecommendations=false
 - mergeRecommendations=false
+Item model files are stored within the specified directory in config file.
 
 ### Run
 ```bash
 java -Xms24g -Xmx48g -jar semauto.jar
 ```
+
+### User Profiles
+
+User profiles are generated and stored within the specified directory in config file. Each file named as the user id represents a user profile. It contains all the features and their weight for a certain user.
 
 ## How to cite
 Please cite SEMAUTO if it helps your research. You can use the following BibTeX entry:
