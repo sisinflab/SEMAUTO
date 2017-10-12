@@ -1,0 +1,21 @@
+# properties chain file
+# each hop separated by space
+
+http://purl.org/dc/terms/subject
+# http://www.w3.org/1999/02/22-rdf-syntax-ns#type
+
+# http://dbpedia.org/ontology/director
+# http://dbpedia.org/ontology/writer
+# http://dbpedia.org/ontology/starring
+# http://dbpedia.org/ontology/distributor
+# http://dbpedia.org/ontology/producer
+# http://dbpedia.org/ontology/musicComposer
+# http://dbpedia.org/ontology/cinematography
+
+# http://dbpedia.org/ontology/director http://purl.org/dc/terms/subject
+# http://dbpedia.org/ontology/writer http://purl.org/dc/terms/subject
+# http://dbpedia.org/ontology/starring http://purl.org/dc/terms/subject
+# http://dbpedia.org/ontology/distributor http://purl.org/dc/terms/subject
+# http://dbpedia.org/ontology/producer http://purl.org/dc/terms/subject
+# http://dbpedia.org/ontology/musicComposer http://purl.org/dc/terms/subject
+# http://dbpedia.org/ontology/cinematography http://purl.org/dc/terms/subject
