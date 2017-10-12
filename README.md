@@ -1,6 +1,14 @@
 # SEMAUTO
 A Java framework to build semantics-aware autoencoder neural network from a knowledge-graph.
 
+
+In this paper, we
+instigate how to exploit the semantic information encoded in a
+knowledge graph to build connections between units in a Neural
+Network, thus leading to a new method, SEM-AUTO, to extract and
+weight semantic features that can eventually be used to build a recommender
+system. 
+
 ## Quickstart
 
 ### Configuration
@@ -9,6 +17,8 @@ Edit props.txt and write the desired chains of properties to fetch from the grap
 
 Edit config.properties to setup the neural network configuration.
 
+### Item model generation
+
 Item model files are representations of items content-based description and are used to generate recommendations.
 SEMAUTO generates those files with the following settings in config file:
 - computeWeights=false
@@ -16,14 +26,21 @@ SEMAUTO generates those files with the following settings in config file:
 - mergeRecommendations=false
 Item model files are stored within the specified directory in config file.
 
-### Run
+#### Run
 ```bash
 java -Xms24g -Xmx48g -jar semauto.jar
 ```
 
-### User Profiles
+### Building User Profiles
 
 User profiles are generated and stored within the specified directory in config file. Each file named as the user id represents a user profile. It contains all the features and their weight for a certain user.
+In order to generate user profiles, the related property should be enabled in config file:
+- computeWeights=true
+
+#### Run
+```bash
+java -Xms24g -Xmx48g -jar semauto.jar
+```
 
 ## How to cite
 Please cite SEMAUTO if it helps your research. You can use the following BibTeX entry:
