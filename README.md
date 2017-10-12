@@ -1,6 +1,14 @@
 # SEMAUTO
 A Java framework to build semantics-aware autoencoder neural network from a knowledge-graph.
 
+## Quickstart
+
+### Run
+```
+bash
+java -Xms24g -Xmx48g -jar semauto.jar
+```
+
 ## How to cite
 Please cite SEMAUTO if it helps your research. You can use the following BibTeX entry:
 ```
