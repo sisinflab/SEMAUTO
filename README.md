@@ -4,8 +4,7 @@ A Java framework to build semantics-aware autoencoder neural network from a know
 ## Quickstart
 
 ### Run
-```
-bash
+```bash
 java -Xms24g -Xmx48g -jar semauto.jar
 ```
 
