@@ -3,6 +3,16 @@ A Java framework to build semantics-aware autoencoder neural network from a know
 
 ## Quickstart
 
+Edit props.txt and write the desired chains of properties to fetch from the graph.
+
+Edit config.properties to setup the neural network configuration.
+
+Item model files are representations of items content-based description and are used to generate recommendations.
+SEMAUTO generates those files with the following settings in config file:
+- computeWeights=false
+- computeRecommendations=false
+- mergeRecommendations=false
+
 ### Run
 ```bash
 java -Xms24g -Xmx48g -jar semauto.jar
