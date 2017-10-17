@@ -1,19 +1,18 @@
 # SEMAUTO
-A Java framework to build semantics-aware autoencoder neural network from a knowledge-graph.
+A Java framework to build semantics-aware autoencoder neural networks from a knowledge-graph.
 
 
-In this paper, we
-instigate how to exploit the semantic information encoded in a
-knowledge graph to build connections between units in a Neural
-Network, thus leading to a new method, SEM-AUTO, to extract and
-weight semantic features that can eventually be used to build a recommender
-system. 
+SEMAUTO allows the user to exploit the semantic information encoded in a
+knowledge graph to build connections between units in the hidden layers of a Neural
+Network, thus mimicking the the topology of the knowledge graph. As a resutl we have a Neural Network which is not fully-connected and, at the same time, we have an explciti semantics (that of the knowledge graph) attached to the nodes of the hidden layer. This also leads to an explicit identification of the semantics of the "latent" factors represented by the nodes of the hidden layers.
+
+SEMAUTO has been orignally conceived to build knowledge-aware recommender systems exploiting the information available in Linked Data datasets such as DBpedia. Hence, it exposes methods to model a user profile based on a model trained via user ratings and then it computes recommendations.  
 
 ## Quickstart
 
 ### Configuration
 
-Edit props.txt and write the desired chains of properties to fetch from the graph.
+Edit props.txt and write the desired chains of properties to fetch from the knolwedge graph.
 
 Edit config.properties to setup the neural network configuration.
 
@@ -48,7 +47,7 @@ Please cite SEMAUTO if it helps your research. You can use the following BibTeX 
 @inproceedings{Bellini:2017:AUR:3125486.3125496,
  author = {Bellini, Vito and Anelli, Vito Walter and Di Noia, Tommaso and Di Sciascio, Eugenio},
  title = {Auto-Encoding User Ratings via Knowledge Graphs in Recommendation Scenarios},
- booktitle = {Proceedings of the 2Nd Workshop on Deep Learning for Recommender Systems},
+ booktitle = {Proceedings of the 2nd Workshop on Deep Learning for Recommender Systems},
  series = {DLRS 2017},
  year = {2017},
  isbn = {978-1-4503-5353-3},
@@ -63,3 +62,12 @@ Please cite SEMAUTO if it helps your research. You can use the following BibTeX 
  keywords = {Autoencoders, DBpedia, Deep Learning, Knowledge graphs, Linked Open Data, Recommender Systems},
 } 
 ```
+
+Contacts
+-------
+
+   Tommaso Di Noia, tommaso [dot] dinoia [at] poliba [dot] it  
+   
+   Vito Bellini, vito [dot] bellini [at] poliba [dot] it 
+   
+   Angelo Schiavone, a [dot] schiavone5 [at] studenti [dot] poliba [dot] it  
