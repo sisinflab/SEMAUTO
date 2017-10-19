@@ -4,7 +4,7 @@ A Java framework to build semantics-aware autoencoder neural networks from a kno
 
 SEMAUTO allows the user to exploit the semantic information encoded in a
 knowledge graph to build connections between units in the hidden layers of a Neural
-Network, thus mimicking the the topology of the knowledge graph. As a resutl we have a Neural Network which is not fully-connected and, at the same time, we have an explciti semantics (that of the knowledge graph) attached to the nodes of the hidden layer. This also leads to an explicit identification of the semantics of the "latent" factors represented by the nodes of the hidden layers.
+Network, thus mimicking the the topology of the knowledge graph. As a resutl we have a Neural Network which is not fully-connected and, at the same time, we have an explicit semantics (that of the knowledge graph) attached to the nodes of the hidden layer. This also leads to an explicit identification of the semantics of the "latent" factors represented by the nodes of the hidden layers.
 
 SEMAUTO has been orignally conceived to build knowledge-aware recommender systems exploiting the information available in Linked Data datasets such as DBpedia. Hence, it exposes methods to model a user profile based on a model trained via user ratings and then it computes recommendations.  
 
